@@ -1,0 +1,750 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #fff;
+  }
+  
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #5fcf80;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: animate-preloader 1s linear infinite;
+  }
+  
+  @keyframes animate-preloader {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  
+
+
+.topbar {
+    background-color: #82AE42;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+}
+.topbar .topelement{
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+}
+.topbar .topelement i {
+    color: white;
+    margin-right: 5px;
+}
+.topbar .phone {
+    width: 100%;
+    padding: 5px 0px;
+}
+.topbar .email { 
+    width: 100%;
+    padding: 5px 0px;
+}
+.topbar .refund {
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    padding: 5px 0px;
+}
+.topbar .phone a {
+    text-decoration: none;
+    color: white;
+}
+.topbar .email a {
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+}
+.container {
+    height: auto;
+    margin: 0px 100px 0px 100px;
+}
+.navbar {
+    background-color:rgba(0, 0, 0, 0.486);
+    width: 100%;
+    position: absolute;
+}
+.navbar .navelement{
+    width: auto;
+    display: flex;
+    align-content: space-between;
+}
+.navbar .logo {
+    margin: 10px 0px;
+    width: 60%;
+    padding: 15px;
+}
+.navbar .logo a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #82AE42;
+    font-size: 20px;
+    font-weight: 700;
+}
+.navbar .dropmenu {
+    display: flex;
+    margin: 5px;
+    width: 500px;
+    padding: 20px 0px;
+} 
+.navbar .dropmenu li {
+    list-style: none;
+}
+.navbar .dropmenu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin-right: 30px;
+    font-size: 12px;
+}
+.navbar .dropmenu li a.active {
+    border-bottom: 3px solid white;
+}
+.navbar .dropmenu li a.icon {
+    display: flex;
+}
+/* .navbar .dropmenu li a:hover {
+    border-bottom: 3px solid white;
+} */
+.navbar .navelement .toggle {
+    display: none;
+}
+
+.backresponsive .backgroundimg {
+    background-color: red;
+    background: url(../images/wp.jpg);
+    height: 90vh;
+}
+.backresponsive .backgroundtext{
+    background-color: rgba(0, 0, 0, 0.192);
+    color: white;
+    width: 70%;
+    height: 420px;
+    position: absolute;
+    overflow: hidden;
+    text-align: center;
+    margin: -450px 0px 0px 15%;
+    border-radius: 20px;
+}
+.backresponsive .backgroundtext h1{
+    font-family: cursive;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 20px;
+    width: auto;
+}
+.backresponsive .backgroundtext p {
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+.backresponsive .backgroundtext a {
+    background-color: green;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.backresponsive .backgroundtext a:hover {
+    background-color: rgba(0, 128, 0, 0.568);
+
+}
+.section1 {
+    width: 100%;
+    height: auto;
+}
+.section1 .responsive {
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(20rem, 4fr));
+}
+.section1 .card {
+    height: 200px;
+    width: auto;
+    margin:20px 80px;
+    padding: 10px 5px 0px 5px;
+    text-align: center;
+}
+.section1 .card .circle1 {
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    background-color: #E4B2D6;
+    padding: 10px;
+    border-radius: 50%;
+}
+.section1 .card .circle2 {
+    width: 56px;
+    height: 56px;
+    padding: 11px;
+    border-radius:50% ;
+    border: 1px solid rgba(255, 255, 255, 0.219);
+}
+.section1 .card .icon2 .circle1 {
+    background-color: #DCC698;
+}
+.section1 .card .icon3 .circle1 {
+    background-color: #A2D1E1;
+}
+.section1 .card .icon4 .circle1 {
+    background-color: #DCD691;
+}
+.section1 .card .circle2 i {
+    margin: 11px;
+    font-size: 30px;
+}
+.section1 .card .circle1:hover{
+    background-color: green;
+}
+.section1 .card h3 {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.section1 .card span {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: grey;
+}
+.section2 {
+    width: 100%;
+}
+.section2 .responsive {
+    width: auto;
+    margin-left: 20px;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 3fr));
+}
+.section2 .sub1 {
+    width: 200px;
+}
+.section2 .sub2 {
+    width: 200px;
+} 
+.section2 .sub3 {
+    width: 200px;
+}
+.section2 .sub2 .text {
+    width: 350px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.section2 .sub2 .textabove{
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+}
+
+.section2 .sub2 .textabove span {
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+.section2 .sub2 .textabove a {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.section2 .sub2 .textabove a:hover{
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+}
+.products {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    padding: 90px 0px;
+}
+.products span.subheading {
+    color: green;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.products h2 {
+    margin: 10px 0px;
+    text-transform:capitalize;
+}
+.products p {
+    color: grey;
+}
+.products .responsive {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 4fr));
+}
+.products .card2 {
+    width: 250px;
+    height: 200px;
+    margin:30px 10px 30px 10px;
+    text-align: center;
+}
+.products .card2 .product a:hover {
+    padding: 2px;
+}
+.products .card2 .product {
+      width: 250px;
+      height: 150px;
+}
+.products .card2 .product img {
+    width: 250px;
+    height: 200px;
+    border: 1px solid grey;
+}
+.products .card2 .product img:hover {
+    box-shadow: 2px 2px 3px black; 
+
+}
+
+.products .card2 .product em {
+    background-color: green;
+    position: absolute;
+    float: left;
+    padding: 5px;
+    font-size: 13px;
+    color: #FFFFFF;
+}
+.products .card2 .price span a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 13px;
+}
+.products .card2 .price p a{
+    text-decoration: line-through;
+    color: grey;
+}
+.products .card2 .price p {
+    color: green;
+}
+.deal {
+    width: 100%;
+    padding: 90px 0px;
+}
+.deal .responsive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(21rem, 2fr));
+}
+.deal .left {
+    width: 100%;
+}
+.deal .left img {
+    width: 100%;
+    height: 500px;
+}
+.deal .right {
+    background-color: pink;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    justify-self: right; 
+    background-blend-mode: darken;
+}
+.deal .right .trap {
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.deal .right span {
+    text-transform: capitalize;
+    color: #82AE42;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.deal .right h2 {
+    margin: 20px 0px;
+    text-transform: capitalize;
+}
+.deal .right h3 a {
+    text-decoration: none;
+    color: #82AE42;
+    line-height: 3;
+    padding: 10px 0px;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.deal .right p a {
+    color: #82AE42;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.deal .right p{
+    color: grey;
+}
+.deal .right .countheader {
+    color: #82AE42;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+.deal .right .time {
+    display: flex;
+    font-size: 30px;
+    font-weight: bold;
+    color: #82AE42;
+}
+.deal .right .time h2 {
+    padding-left: 5px;
+    color: #82AE42;
+    font-size:40px;
+}
+.deal .right .time .mo {
+    width: 55px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    margin-right: 5px;
+    background: #82AE42;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    position: relative;
+}
+.deal .right .time .mo::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 30px;
+    background: #ff0;
+    color: #000000;
+    left: 0;
+    bottom: -30px;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.deal .right #day {
+    border-right: 1px solid grey;
+    padding: 0px 10px;
+}
+.deal .right #hour {
+    border-right: 1px solid grey;
+    padding: 0px 10px;
+}
+.deal .right #minutes {
+    border-right: 1px solid grey;
+    padding: 0px 10px;
+}
+.deal .right #second {
+    padding: 0px 10px;
+}
+.deal .right #day::after {
+    content: "day";
+}
+.deal .right #hour::after{
+    content: "hour";
+}
+.deal .right #minute::after{
+    content: "minute";
+}
+.deal .right #second::after{
+    content: "seconds";
+}
+.deal .right .time span {
+    color: black;
+}
+.feedback {
+    width: 100%;
+    padding: 30px 0px;
+}
+/* .feedback .responsive {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minnmax(20rem, auto));
+} */
+.feedback .head {
+    text-align: center;
+    justify-self: center;
+    margin-top: 100px;
+}
+.feedback .head span {
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #82AE42;
+}
+.feedback .head h2 {
+    text-transform: capitalize;
+    margin: 20px 0px;
+}
+.feedback .head p {
+    color: grey;
+}
+.quotes .dot {
+    font-size: 10px;
+    color: grey;
+    display: flex;
+    margin: 20px 0px;
+}
+.quotes .dot .fst {
+    color: #82AE42;
+}
+.quotes .dot i {
+    padding-right: 5px;
+}
+.quotes .responsive {
+    display: grid;
+    align-items: center;
+}
+.quotes .element {
+    width: 300px;
+    text-align: center;
+    margin: 100px 0px;
+    justify-self: center;
+}
+.quotes .element p { 
+    color: grey;
+    margin: 20px 0px;
+}
+.quotes .element h3 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.quotes .element span {
+    color: grey;
+    text-transform: uppercase;
+}
+.support {
+    width: 100%;
+    padding: 100px 0px;
+    border-top: 1px solid grey;
+}
+.support .responsive {
+    width: 90%;
+    display: flex;
+    margin: 0px auto;
+}
+.support .image {
+    width: 100%;
+    height: 100px;
+}
+.support img {
+    width: 100%;
+}
+.subscription {
+    width: 100%;
+    height: 100px;
+    background-color: #F7F6F2;
+    padding: 60px 0px;
+}
+/* .subscription .responsive {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 2fr));
+} */
+.subscription .txt { 
+    width: auto;
+    margin-right: 30px;
+}
+.subscription .txt h2 {
+    text-transform: capitalize;
+    font-weight: 200;
+    padding: 10px 0px;
+}
+.subscription .txt span {
+    color: grey;
+}
+.subscription p {
+    width: 300px;
+    margin-top: 20px;
+}
+.subscription p input {
+    outline: 0;
+    padding: 5px;
+}
+.subscription button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: 0;
+    margin-left: 10px;
+    background: #82AE42;
+    color: #FFFFFF;
+}
+.subscription button:hover {
+    background: #FFFFFF;
+    color: #DCD691;
+}
+.footer {
+    width: 100%;
+    height: 400px;
+}
+.footer .responsive{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 4fr));
+}
+.footer .first {
+    width: 250px;
+}
+.footer .menu {
+    width: 100px;
+}
+.footer .help {
+    width: 150px;
+}
+.footer p {
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.footer span {
+    font-size: 14px;
+}
+.footer ul li {
+    list-style: none;
+    line-height: 2;
+    font-size: 14px;
+}
+.footer ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+.footer ul li i {
+    color: grey;
+    padding-right: 20px;
+}
+.footer .copy {
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+}
+.footer .copy i {
+    color: #82AE42;
+}
+.footer .copy a {
+    color: #82AE42;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* tablet view */
+@media only screen and (max-width : 768px ) {
+.topbar .topelement {
+    display: block;
+}
+.container {
+    margin: 0px 50px;
+}
+.navbar {
+    background-color: #000000; 
+}
+.navbar .navelement {
+    display: block;
+}
+.navbar .logo {
+    margin-right: 50px;
+}
+.navbar .logo a {
+    color: white; 
+    margin-right: 50px;
+} 
+.navbar .navelement .toggle {
+    display: block; 
+    float: right;
+    margin: -80px 10px 0px 350px;
+
+}
+.navbar .navelement .toggle i {
+    color:white ;
+    text-decoration: none;
+    padding-right: 5px;
+}
+.navbar .navelement .toggle a {
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    margin-top: 30px;
+}
+.navbar .navelement .dropmenu {
+    flex-direction: column;  
+    display: none; 
+    line-height: 2;
+}
+.navbar .navelement .dropmenu li a{
+    color: grey;
+}
+.navbar .navelement .dropmenu li .homy {
+    color: white;
+    border: none;
+}
+.navbar .navelement .dropmenu.appear {
+    display: block;     
+}
+/* .section2 .responsive { 
+    display: grid;
+    grid-template-columns: auto;
+} */
+.products .card2 {
+    width: auto;
+}
+.products .card2 .product{
+    width: auto;
+}
+.products .card2 img {
+    width: auto;
+}
+
+
+
+
+}
+
+
+ 
+
+
+
+
+
+
+
+
+/* tablet view */
+@media only screen and (max-width : 600px ) {
+
+.container {
+    margin: 0px 10px;
+}
+
+
+
+}
