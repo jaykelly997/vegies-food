@@ -28,11 +28,11 @@
                 <div class="logo"><a href="#">vegefoods</a></div>
                 <div class="toggle"><a href="#"><i class="fa fa-bars"></i><p>menu</p></a></div>
                     <ul class="dropmenu" id="dropmenu">
-                        <li><a class="act"href="#">home</a></li>
-                        <li><a class="act active"href="#shop">shop</a></li>
-                        <li><a class="act"href="#service">about</a></li>
+                        <li><a class="act"href="index.html">home</a></li>
+                        <li><a class="act"href="shop.html">shop</a></li>
+                        <li><a class="act active"href="#">about</a></li>
                         <li><a class="act"href="#">blogs</a></li>
-                        <li><a class="act"href="#contact">contact</a></li>
+                        <li><a class="act"href="#">contact</a></li>
                         <li><a class="act icon"href="#"><i class="fa fa-shopping-cart"></i>[0]</a></li>
                     </ul> 
             </div>
@@ -58,6 +58,15 @@
         }
     
     </script> -->
+
+    <script>
+        $(document).ready(function() {
+            $(".act").click(function(){
+                $(this).addClass("active").siblings().removeClass("active");
+            });
+        });
+    </script>
+    
 
 
 </body> 

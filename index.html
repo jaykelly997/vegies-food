@@ -12,8 +12,8 @@
         <div class="responsive">
             <div class="container">
                 <div class="topelement">
-                    <div class="phone"><i class="fa fa-phone"></i><a href="#">+1235 2355 98</a></div class="phone">
-                    <div class="email"><i class="fas fa-envelope"></i><a href="#">youremail@email.com</a></div>
+                    <div class="phone"><i class="fa fa-phone"></i><a href="tel:+2348144349382">+1235 2355 98</a></div class="phone">
+                    <div class="email"><i class="fas fa-envelope"></i><a href="mailto:jaykelly997@gmail.com">youremail@email.com</a></div>
                     <div class="refund">3-5 business days delivery & free refunds</div>
                 </div>
             </div>
@@ -388,7 +388,7 @@
 
 </script> -->
 
-<script>
+<!-- <script>
       // for navbar active movement
       const list = document.querySelector('.navbar .dropmenu ul');
     const links = list.querySelectorAll('a');
@@ -400,7 +400,16 @@
         e.target.classList.add('active');
      }
     }
+</script> -->
+
+<script>
+    $(document).ready(function (){
+        $(".act").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    });
 </script>
+
 
     
 </body> 

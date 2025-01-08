@@ -27,8 +27,8 @@
                 <div class="logo"><a href="#">vegefoods</a></div>
                 <div class="toggle"><a href="#"><i class="fa fa-bars"></i><p>menu</p></a></div>
                     <ul class="dropmenu" id="dropmenu">
-                        <li><a class="act active"href="index.html">home</a></li>
-                        <li><a class="act"href="shop.html">shop</a></li>
+                        <li><a class="act"href="index.html">home</a></li>
+                        <li><a class="act active"href="shop.html">shop</a></li>
                         <li><a class="act"href="about.html">about</a></li>
                         <li><a class="act"href="blog.html">blogs</a></li>
                         <li><a class="act"href="contact.html">contact</a></li>
@@ -93,7 +93,7 @@
                             <h3><a href="#">spinach</a></h3>
                             <p>$10 <a href="#"> now $5 only</a></p>
                             <div class="countheader">
-                                <h1>countdown to 2025</h1>
+                                <h1>countdown to 2026</h1>
                             </div>
                             <div class="time">
                                 <div class="mo" id="day"><h2>-924</h2><span>days</span></div>
@@ -190,7 +190,7 @@
     <script>
         // javascript for date countdown
 
-        var countDate = new Date('Jan 1, 2025 00:00:00').getTime();
+        var countDate = new Date('Jan 1, 2026 00:00:00').getTime();
 
         function newYear(){
             var now = new Date().getTime();
@@ -272,6 +272,15 @@
     }
 
 </script> -->
+
+<script>
+    $(document).ready(function (){
+        $(".act").click(function(){
+            $(this).addClass("active").siblings().removeClass("active");
+        });
+    });
+</script>
+
 
 </body> 
 </html>
